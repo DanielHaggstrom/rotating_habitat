@@ -110,8 +110,7 @@ def init():
 def animate(i):
     line.set_data(data["x"][:i], data["y"][:i])
     time_text.set_text("Time: {:.2f}s".format(time_step * i))
-    return line, time_text
-ani = animation.FuncAnimation(fig, animate, frames=len(data["x"]),
+    return line, time_textni = animation.FuncAnimation(fig, animate, frames=len(data["x"]),
                               interval=time_step, blit=True, init_func=init, repeat=False)
 
 plt.show()
