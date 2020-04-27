@@ -57,7 +57,7 @@ class Cylinder:
             self.__rotate()
             ball.move()
             count += 1
-            print("Límite: {:.2f}".format(count/max))
+            print("Límite: {:.2f}%".format(count/max * 100))
         plt.plot(x_list, y_list, marker=".")
         plt.show()
 
